@@ -34,15 +34,15 @@ export default function Home() {
         <section>
           <h2>About Me</h2>
           <p>
-            I'm a web developer by trade that enjoys pragmatically solving complex problems. I am comfortable working all over the tech stack but I hold a special spot in my heart for frontend development. Building great user experiences while bringing beautiful designs to life is a driving force in my career. I want to make major impacts in interesting projects that deliver value to users in meaningful ways.
+            I&apos;m a web developer by trade that enjoys pragmatically solving complex problems. I am comfortable working all over the tech stack but I hold a special spot in my heart for frontend development. Building great user experiences while bringing beautiful designs to life is a driving force in my career. I want to make major impacts in interesting projects that deliver value to users in meaningful ways.
           </p>
           <br />
           <p>
-            In the winter, you can find me in the mountains hurtling myself off mountains on my snowboard. In the summer, I enjoy golf, and patio beers with friends. At all times of the year, I'm typically hanging out with my wife and dog.
+            In the winter, you can find me in the mountains hurtling myself off mountains on my snowboard. In the summer, I enjoy golf, and patio beers with friends. At all times of the year, I&apos;m typically hanging out with my wife and dog.
           </p>
           <br />
 
-          <p>If you are a prospective employer with an exciting opportunity, please include the phrase "Pineapples belong on pizza" somewhere in your email. This will show that you have taken the time to evaluate me for skill fit and I promise that I will evaluate your role with as thorough attention as you have given my profile!</p>
+          <p>If you are a prospective employer with an exciting opportunity, please include the phrase &quot;Pineapples belong on pizza&quot; somewhere in your email. This will show that you have taken the time to evaluate me for skill fit and I promise that I will evaluate your role with as thorough attention as you have given my profile!</p>
         </section>
 
         <section>
@@ -60,7 +60,7 @@ export default function Home() {
             <h3>Ambyint // Senior Software Developer</h3>
             <h4>May 2019 - August 2021</h4>
             <p>
-              Senior member of an agile team building a lift-optimization platform agnostic to lift types. Focus on building a highly functional platform that innovates the Oil and Gas sector. Distributed Nodejs backend built in the CQRS pattern using Kafka backed onto MongoDB.
+              Senior member of an agile team building a lift-optimization platform agnostic to lift types. Focused on building a highly functional platform to innovate and disrupt the Oil and Gas sector. Distributed Nodejs backend built in the CQRS pattern using Kafka backed onto MongoDB.
               Worked closely with design and QA to ensure features developed across the stack are delivered to a high quality. I strive to demonstrate technical leadership in my role. A portion of my days was allocated to reviewing pull requests and individual technical mentorship for team members.
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
           <h3>University of Calgary // BSc</h3>
           <h4>Sept 2010 - May 2015</h4>
           <p>
-            Majored in Computer Science with a concentration in Game Development. 3.2 GPA. I wasn't the best student but most of the time, I put my whole ass into getting the degree. In the last two years of my degree, I balanced my internship with full-time studies to ensure that my skills were industry ready by graduation.
+            Majored in Computer Science with a concentration in Game Development. 3.2 GPA. I wasn&apos;t the best student but most of the time, I put my whole ass into getting the degree. In the last two years of my degree, I balanced my internship with full-time studies to ensure that my skills were industry ready by graduation.
           </p>
         </section>
       </main>
