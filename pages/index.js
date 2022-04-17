@@ -23,7 +23,7 @@ export default function Home() {
           <Image src="/face.png" alt="mugshot" width={300} height={300} />
           <div className={styles.bannerContent}>
             <h1>Albert Chu</h1>
-            <h2>Frontend Dev</h2>
+            <h2>Web Developer</h2>
             <div>
               Row of social media links. include email as a mailto
             </div>
@@ -34,31 +34,71 @@ export default function Home() {
         <section>
           <h2>About Me</h2>
           <p>
-            The plans you refer to will soon be back in our hands. Red Five standing by. I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.
-
-            You don't believe in the Force, do you? I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. Red Five standing by. You are a part of the Rebel Alliance and a traitor! Take her away!
+            I'm a web developer by trade that enjoys pragmatically solving complex problems. I am comfortable working all over the tech stack but I hold a special spot in my heart for frontend development. Building great user experiences while bringing beautiful designs to life is a driving force in my career. I want to make major impacts in interesting projects that deliver value to users in meaningful ways.
           </p>
+          <br />
+          <p>
+            In the winter, you can find me in the mountains hurtling myself off mountains on my snowboard. In the summer, I enjoy golf, and patio beers with friends. At all times of the year, I'm typically hanging out with my wife and dog.
+          </p>
+          <br />
+
+          <p>If you are a prospective employer with an exciting opportunity, please include the phrase "Pineapples belong on pizza" somewhere in your email. This will show that you have taken the time to evaluate me for skill fit and I promise that I will evaluate your role with as thorough attention as you have given my profile!</p>
         </section>
 
         <section>
           <h2>Experience</h2>
-          <p>
-            I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here. Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.
 
-            I'm surprised you had the courage to take the responsibility yourself. I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.
+          <div>
+            <h3>ZenHub // Senior Frontend Developer</h3>
+            <h4>August 2021 - Present</h4>
+            <p>
+              I focused on developing features that would improve the developer experience in project management. As a senior member of the team, I am a thought leader for development efforts on complex features. My responsibilities are a balance between development and communicating with PMs and QAs to address priorities quickly. I have a critical role in developing and launching the ZenHub Platform.
+            </p>
+          </div>
 
-            I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you.
-          </p>
+          <div>
+            <h3>Ambyint // Senior Software Developer</h3>
+            <h4>May 2019 - August 2021</h4>
+            <p>
+              Senior member of an agile team building an oil and gas lift-optimization platform. Focus on building a highly functional platform that innovates the O&G sector. Distributed Nodejs backend built in the CQRS pattern using Kafka backed onto MongoDB.
+              Worked closely with design and QA to ensure features developed across the stack are delivered to a high quality. I strive to demonstrate technical leadership in my role. A portion of my days was allocated to reviewing pull requests and individual technical mentorship for team members.
+            </p>
+          </div>
+
+          <div>
+            <h3>Replicon / Software Developer</h3>
+            <h4>May 2017 - May 2019</h4>
+            <p>
+              Full-stack dev on a productivity cloud platform. Node.js backend deployed on AWS and using a mix of AWS technologies. React.js frontend using GraphQL as a middleware to query a C# backend. Worked closely with the UX team to iterate and develop prototype designs into deployable production ready code.
+
+
+              Additionally designed and developed a performance metrics database and visualization frontend with React.js and Highcharts. The objective was to create a system for visualizing test metrics in order to gain visibility into areas of concern.
+            </p>
+          </div>
+
+          <div>
+            <h3>Synopsys / Software Engineer</h3>
+            <h4>May 2015 - May 2017</h4>
+            <p>
+              Spearheaded the performance lab to deliver data visualizations to identify bottlenecks and regressions in weekly builds. Additionally, I built out large features for automated testing and triage of the Coverity platform.
+            </p>
+          </div>
+
+          <div>
+            <h3>Coverity / Software Automation Intern</h3>
+            <h4>Oct 2013 - May 2015</h4>
+            <p>
+              My first steps into the industry of software development. My main work was around end to end test automation, and performance and scalability testing on unix systems to identify bottlenecks in the static analysis engine.
+            </p>
+          </div>
         </section>
 
         <section>
           <h2>Education</h2>
+          <h3>University of Calgary // BSc</h3>
+          <h4>Sept 2010 - May 2015</h4>
           <p>
-            No! Alderaan is peaceful. We have no weapons. You can't possibly… I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.
-
-            You don't believe in the Force, do you? Obi-Wan is here. The Force is with him. Still, she's got a lot of spirit. I don't know, what do you think? But with the blast shield down, I can't even see! How am I supposed to fight?
-
-            I need your help, Luke. She needs your help. I'm getting too old for this sort of thing. A tremor in the Force. The last time I felt it was in the presence of my old master. The Force is strong with this one. I have you now.
+            Majored in Computer Science with a concentration in Game Development. 3.2 GPA. I wasn't the best student but most of the time, I put my whole ass into getting the degree. In the last two years of my degree, I balanced my internship with full-time studies to ensure that my skills were industry ready by graduation.
           </p>
         </section>
       </main>
