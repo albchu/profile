@@ -1,0 +1,5 @@
+.date{
+    font-weight: var(--font-weight-3);
+    font-size: var(--font-size-3);
+    letter-spacing: var(--font-letterspacing-4);
+}
