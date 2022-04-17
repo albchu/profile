@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { EnvelopeLogo } from '../components/envelope-logo'
+import { GitHubLogo } from '../components/github-logo'
+import { LinkedinLogo } from '../components/linkedin-logo'
 import styles from '../styles/Home.module.css'
 
 // I believe this is all I need for serverside generation.
@@ -20,12 +22,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.banner}>
-          <Image src="/face.png" alt="mugshot" width={300} height={300} />
+          <img src="/face.png" alt="mugshot" />
           <div className={styles.bannerContent}>
             <h1>Albert Chu</h1>
             <h2>Web Developer</h2>
-            <div>
-              Row of social media links. include email as a mailto
+            <div className={styles.socials}>
+              <GitHubLogo />
+              <LinkedinLogo />
+              <EnvelopeLogo />
             </div>
 
           </div>
@@ -42,7 +46,7 @@ export default function Home() {
           </p>
           <br />
 
-          <p>If you are a prospective employer with an exciting opportunity, please include the phrase &quot;Pineapples belong on pizza&quot; somewhere in your email. This will show that you have taken the time to evaluate me for skill fit and I promise that I will evaluate your role with as thorough attention as you have given my profile!</p>
+          <p>If you are a prospective employer with an exciting opportunity, please include the phrase &quot;Pineapples belong on pizza&quot; somewhere in your email. This will show that you have taken the time to evaluate me for skill fit and I promise that I will evaluate your role with as thorough attention as you have given my profile.</p>
         </section>
 
         <section>

@@ -3,7 +3,8 @@
 
 .main{
   padding: var(--size-fluid-5);
-  /* max-width: 500px; */
+  max-height: 100vh;
+  overflow-y: auto;
   font-family: var(--font-sans);
 }
 
@@ -17,4 +18,14 @@
 
 .bannerContent{
   
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-fluid-2)
+}
+
+.socials svg{
+  fill: green;
 }
