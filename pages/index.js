@@ -60,7 +60,7 @@ export default function Home() {
             <h3>Ambyint // Senior Software Developer</h3>
             <h4>May 2019 - August 2021</h4>
             <p>
-              Senior member of an agile team building an oil and gas lift-optimization platform. Focus on building a highly functional platform that innovates the O&G sector. Distributed Nodejs backend built in the CQRS pattern using Kafka backed onto MongoDB.
+              Senior member of an agile team building a lift-optimization platform agnostic to lift types. Focus on building a highly functional platform that innovates the Oil and Gas sector. Distributed Nodejs backend built in the CQRS pattern using Kafka backed onto MongoDB.
               Worked closely with design and QA to ensure features developed across the stack are delivered to a high quality. I strive to demonstrate technical leadership in my role. A portion of my days was allocated to reviewing pull requests and individual technical mentorship for team members.
             </p>
           </div>
