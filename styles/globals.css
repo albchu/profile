@@ -1,5 +1,5 @@
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
+@import "open-props/style";
+@import "open-props/normalize";
 
 html,
 body {
