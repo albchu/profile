@@ -1,7 +1,8 @@
 .date {
     font-weight: var(--font-weight-3);
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-5);
     letter-spacing: var(--font-letterspacing-2);
+    text-align: right;
 }
 
 .titleBlock {
@@ -13,7 +14,6 @@
 .role {
     font-size: var(--font-size-4);
     font-weight: var(--font-weight-7);
-    line-height: 1em;
 }
 
 .company {
@@ -23,4 +23,15 @@
 
 .container {
     padding: var(--size-3) 0;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: var(--size-2);
+    margin-bottom: var(--size-2);
+    border-bottom: 3px var(--blue-4) solid;
 }
