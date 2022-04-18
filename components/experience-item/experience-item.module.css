@@ -1,4 +1,5 @@
 .date {
+    grid-area: date;
     font-weight: var(--font-weight-3);
     font-size: var(--font-size-5);
     letter-spacing: var(--font-letterspacing-2);
@@ -6,6 +7,7 @@
 }
 
 .titleBlock {
+    grid-area: titleBlock;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -14,6 +16,7 @@
 .role {
     font-size: var(--font-size-4);
     font-weight: var(--font-weight-7);
+    white-space: nowrap;
 }
 
 .company {
@@ -23,18 +26,32 @@
 }
 
 .container {
-    padding: var(--size-3) 0;
-
+    padding: var(--size-1) 0 var(--size-2);
 }
 
 .header {
-    padding-bottom: var(--size-2);
-    margin-bottom: var(--size-2);
-    border-bottom: 3px var(--blue-4) solid;
+    margin: var(--size-1);
+    padding: var(--size-2);
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: var(--size-4);
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: var(--radius-3)
+}
+
+.header:focus, .header:active {
+    margin: 0;
+    border: var(--size-1) var(--blue-5) solid;
+}
+
+/* Hover styling is sticky on touch devices. This fixes that */
+@media (hover: hover) {
+    .header:hover {
+        margin: 0;
+        border: var(--size-1) var(--blue-5) solid;
+    }
 }
 
 .header img {
@@ -47,13 +64,40 @@
 .headerContents {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas: "titleBlock date chevron";
     align-items: center;
     justify-content: space-between;
 }
 
+.chevron {
+    padding: 0 var(--size-2);
+    grid-area: chevron;
+    justify-self: center;
+    transform: rotate(180deg);
+    transition: transform .4s var(--ease-in-out-5);
+}
+
+.chevronExpanded {
+    transform: rotate(0deg);
+}
+
+.chevron svg {
+    fill: var(--indigo-8);
+    height: 100%;
+    width: 24px;
+}
+
 .details {
-    padding-left: 80px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    height: auto;
+    max-height: 0;
+    padding-left: var(--size-3);
+}
+
+.detailsExpanded {
+    max-height: 600px;
 }
 
 .companyLink:hover, .companyLink:active {
@@ -82,8 +126,10 @@
 
 @media (max-width: 900px) {
     .headerContents {
-        grid-template-columns: auto;
-        grid-template-rows: 1fr auto;
+        grid-template-columns: auto auto;
+        /*   grid-template-rows: 1fr auto; */
+        grid-template-areas: "titleBlock chevron"
+            "date chevron"
     }
 
     .date {
@@ -116,9 +162,20 @@
     }
 }
 
+
+@media (max-width: 450px) {
+    .header {
+        gap: var(--size-2);
+    }
+}
+
 @media (max-width: 400px) {
     .header img {
         width: 45px;
+    }
+
+    .chevron svg {
+        width: 16px;
     }
 }
 

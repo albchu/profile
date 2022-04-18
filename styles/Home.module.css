@@ -131,6 +131,12 @@
 }
 
 
+@media (max-width: 450px) {
+  .main {
+    padding: var(--size-fluid-2) var(--size-fluid-2);
+  }
+}
+
 @media (max-width: 380px) {
   .heroTitle {
     font-size: var(--font-size-4);
