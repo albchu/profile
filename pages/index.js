@@ -24,14 +24,20 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.banner}>
-          <img src="/face.png" alt="mugshot" />
+          <img src="/face.png" alt="mugshot" className={styles.heroImage} />
           <div className={styles.bannerContent}>
-            <h1>Albert Chu</h1>
-            <h2>Web Developer</h2>
+            <div className={styles.heroTitle}>Web Developer</div>
+            <div className={styles.heroName}>Albert Chu</div>
             <div className={styles.socials}>
-              <GitHubLogo />
-              <LinkedinLogo />
-              <EnvelopeLogo />
+              <a href="https://github.com/albchu">
+                <GitHubLogo />
+              </a>
+              <a href="https://www.linkedin.com/in/albchu/">
+                <LinkedinLogo />
+              </a>
+              <a href="mailto:albertchu539@gmail.com">
+                <EnvelopeLogo />
+              </a>
             </div>
 
           </div>
