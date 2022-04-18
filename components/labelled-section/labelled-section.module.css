@@ -2,6 +2,7 @@
     margin-top: var(--size-fluid-4);
     margin-bottom: var(--size-fluid-1);
     font-weight: var(--font-weight-8);
+    color: var(--indigo-3);
 }
 
 .sectionContents {

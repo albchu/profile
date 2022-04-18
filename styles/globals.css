@@ -22,4 +22,7 @@ a {
 
 p {
   font-size: var(--font-size-3);
+  font-weight: var(--font-weight-5);
+  color: var(--gray-5);
+  letter-spacing: var(--font-letterspacing-1);
 }

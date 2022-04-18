@@ -1,4 +1,5 @@
 import React from 'react'
+import { ArrowUpRightFromSquareIcon } from '../arrow-up-right-from-square-icon'
 import styles from './experience-item.module.css'
 
 export const ExperienceItem = ({ logoPath, company, companyUrl, role, date, children }) => {
@@ -11,8 +12,9 @@ export const ExperienceItem = ({ logoPath, company, companyUrl, role, date, chil
                     <div className={styles.titleBlock}>
                         <div className={styles.company}>{
                             companyUrl ?
-                                <a href={companyUrl}>
+                                <a href={companyUrl} className={styles.companyLink}>
                                     {company}
+                                    <ArrowUpRightFromSquareIcon />
                                 </a> :
                                 company
                         }</div>

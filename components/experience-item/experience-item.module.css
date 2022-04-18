@@ -56,6 +56,30 @@
     padding-left: 80px;
 }
 
+.companyLink:hover, .companyLink:active {
+    color: var(--indigo-3);
+}
+
+.companyLink {
+    color: var(--indigo-5);
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-2);
+    align-items: center;
+}
+
+.companyLink:hover svg, .companyLink:active svg {
+    fill: var(--indigo-4);
+    opacity: 0.9;
+}
+
+.companyLink svg {
+    fill: var(--indigo-6);
+    height: 100%;
+    width: var(--size-3);
+    opacity: 0.5
+}
+
 @media (max-width: 900px) {
     .headerContents {
         grid-template-columns: auto;
