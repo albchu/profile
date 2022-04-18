@@ -26,20 +26,22 @@ export default function Home() {
         <div className={styles.banner}>
           <img src="/face.png" alt="mugshot" className={styles.heroImage} />
           <div className={styles.bannerContent}>
-            <div className={styles.heroTitle}>Web Developer</div>
             <div className={styles.heroName}>Albert Chu</div>
+            <div className={styles.heroTitle}>Web Developer</div>
             <div className={styles.socials}>
+
               <a href="https://github.com/albchu">
                 <GitHubLogo />
               </a>
+
               <a href="https://www.linkedin.com/in/albchu/">
                 <LinkedinLogo />
               </a>
+
               <a href="mailto:albertchu539@gmail.com">
                 <EnvelopeLogo />
               </a>
             </div>
-
           </div>
         </div>
 
@@ -134,7 +136,6 @@ export default function Home() {
             </ExperienceItem>
           </LabelledSection>
         </div>
-
       </main>
 
       <footer>
