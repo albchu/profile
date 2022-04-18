@@ -63,8 +63,9 @@ export default function Home() {
             <ExperienceItem
               company="ZenHub"
               role="Senior Frontend Developer"
-              date="August 2021 - Present"
+              date="Aug 2021 - Present"
               companyUrl="https://www.zenhub.com/"
+              logoPath="/zenhub-logo.png"
             >
               <p>
                 I focused on developing features that would improve the developer experience in project management. As a senior member of the team, I am a thought leader for development efforts on complex features. My responsibilities are a balance between development and communicating with PMs and QAs to address priorities quickly. I have a critical role in developing and launching the ZenHub Platform.
@@ -74,8 +75,9 @@ export default function Home() {
             <ExperienceItem
               company="Ambyint"
               role="Senior Software Developer"
-              date="May 2019 - August 2021"
+              date="May 2019 - Aug 2021"
               companyUrl="https://www.ambyint.com/"
+              logoPath="/ambyint-logo.png"
             >
               <p>
                 Senior member of an agile team building a lift-optimization platform agnostic to lift types. Focused on building a highly functional platform to innovate and disrupt the Oil and Gas sector. Distributed Nodejs backend built in the CQRS pattern using Kafka backed onto MongoDB.
@@ -88,6 +90,7 @@ export default function Home() {
               role="Software Developer"
               date="May 2017 - May 2019"
               companyUrl="https://www.replicon.com/en-ca/"
+              logoPath="/replicon-logo.png"
             >
               <p>
                 Full-stack dev on a productivity cloud platform. Node.js backend deployed on AWS and using a mix of AWS technologies. React.js frontend using GraphQL as a middleware to query a C# backend. Worked closely with the UX team to iterate and develop prototype designs into deployable production ready code.
@@ -101,18 +104,19 @@ export default function Home() {
               role="Software Engineer"
               date="May 2015 - May 2017"
               companyUrl="https://www.synopsys.com/software-integrity/security-testing/static-analysis-sast.html"
+              logoPath="/synopsys-logo.png"
             >
               <p>
                 Spearheaded the performance lab to deliver data visualizations to identify bottlenecks and regressions in weekly builds. Additionally, I built out large features for automated testing and triage of the Coverity platform.
               </p>
             </ExperienceItem>
 
-
             <ExperienceItem
               company="Coverity"
               role="Software Automation Intern"
               date="Oct 2013 - May 2015"
               companyUrl="https://www.synopsys.com/software-integrity/security-testing/static-analysis-sast.html"
+              logoPath="/coverity-logo.png"
             >
               <p>
                 My first steps into the industry of software development. My main work was around end to end test automation, and performance and scalability testing on unix systems to identify bottlenecks in the static analysis engine.
@@ -122,13 +126,12 @@ export default function Home() {
           </LabelledSection>
 
           <LabelledSection title="Education">
-
-
             <ExperienceItem
               company="University of Calgary"
               role="Bachelors of Science"
-              date="Sept 2010 - May 2015"
+              date="Sep 2010 - May 2015"
               companyUrl="https://science.ucalgary.ca/"
+              logoPath="/ucalgary-logo.jpg"
             >
               <p>
                 Majored in Computer Science with a concentration in Game Development. I balanced my internship with full-time studies to ensure that I was industry ready by graduation.
