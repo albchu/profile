@@ -10,5 +10,4 @@
 
 .sectionContents p {
     max-inline-size: unset;
-    font-size: var(--font-size-3);
 }

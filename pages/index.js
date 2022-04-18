@@ -136,12 +136,13 @@ export default function Home() {
             </ExperienceItem>
           </LabelledSection>
         </div>
+
+        <div className={styles.footer}>
+          <img src="/pineapple.png" />
+          <p>You've made it to the end.</p>
+          <p>Thanks for visiting!</p>
+        </div>
       </main>
-
-      <footer>
-        some pineappel image
-      </footer>
-
     </div>
   )
 }
