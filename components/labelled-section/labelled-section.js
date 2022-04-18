@@ -5,7 +5,9 @@ export const LabelledSection = ({ title, children }) => {
     return (
         <section>
             <h2 className={styles.title}>{title}</h2>
-            {children}
+            <div className={styles.sectionContents}>
+                {children}
+            </div>
         </section>
     )
 }

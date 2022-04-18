@@ -3,3 +3,12 @@
     margin-bottom: var(--size-fluid-1);
     font-weight: var(--font-weight-8);
 }
+
+.sectionContents {
+    max-width: 800px
+}
+
+.sectionContents p {
+    max-inline-size: unset;
+    font-size: var(--font-size-3);
+}

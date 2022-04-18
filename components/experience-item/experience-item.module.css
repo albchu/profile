@@ -1,5 +1,26 @@
-.date{
+.date {
     font-weight: var(--font-weight-3);
     font-size: var(--font-size-3);
-    letter-spacing: var(--font-letterspacing-4);
+    letter-spacing: var(--font-letterspacing-2);
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.role {
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-7);
+    line-height: 1em;
+}
+
+.company {
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-5);
+}
+
+.container {
+    padding: var(--size-3) 0;
 }

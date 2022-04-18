@@ -3,8 +3,11 @@ import styles from './experience-item.module.css'
 
 export const ExperienceItem = ({ company, role, date, children }) => {
     return (
-        <div>
-            <h3>{company} // {role}</h3>
+        <div className={styles.container}>
+            <div className={styles.titleBlock}>
+                <div className={styles.company}>{company}</div>
+                <div className={styles.role}>{role}</div>
+            </div>
             <div className={styles.date}>{date}</div>
             {children}
         </div>
