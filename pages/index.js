@@ -74,7 +74,7 @@ export default function Home() {
 
             <ExperienceItem
               company="Ambyint"
-              role="Senior Software Developer"
+              role="Senior Full Stack Developer"
               date="May 2019 - Aug 2021"
               companyUrl="https://www.ambyint.com/"
               logoPath="/ambyint-logo.png"

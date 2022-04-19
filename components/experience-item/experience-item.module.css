@@ -98,6 +98,7 @@
 
 .detailsExpanded {
     max-height: 600px;
+    padding-bottom: var(--size-3);
 }
 
 .companyLink:hover, .companyLink:active {
