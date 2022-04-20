@@ -14,6 +14,17 @@
     position: relative;
 }
 
+.container::before {
+    position: absolute;
+    content: '';
+    background: url('/overhang.png') no-repeat bottom;
+    background-size: cover;
+    height: 50vw;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+}
+
 /* 
 Limitation of my parallax demo is that I have made
 the decision to absolute position my content. 
@@ -56,7 +67,7 @@ reasonably accomodate all the content
     height: var(--mountain-length);
     background: url('/mountains-front.svg') no-repeat center;
     background-size: contain;
-    margin-top: calc(var(--mountain-length) / -4);
+    /* margin-top: calc(var(--mountain-length) / -4); */
     position: relative;
 }
 
