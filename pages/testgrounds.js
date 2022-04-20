@@ -13,7 +13,7 @@ export const TestGrounds = () => {
             <div className={styles.contentContainer}>
                 <HeroBanner />
 
-                <div>He is here.
+                {/* <div>He is here.
                     You mean it controls your actions? You mean it controls your actions? He is here. Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going.
 
                     I need your help, Luke. She needs your help. I'm getting too old for this sort of thing. Obi-Wan is here. The Force is with him. Dantooine. They're on Dantooine. What?!
@@ -51,6 +51,7 @@ export const TestGrounds = () => {
                     Ye-ha! He is here. I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. I care. So, what do you think of her, Han?
 
                     I have traced the Rebel spies to her. Now she is my only link to finding their secret base. All right. Well, take care of yourself, Han. I guess that's what you're best at, ain't it? Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going.</div>
+            */}
             </div>
             <div className={styles.mountainsUpper} ref={parallax1.ref} />
             <div className={styles.mountainsLower} ref={parallax2.ref} />
