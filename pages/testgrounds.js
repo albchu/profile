@@ -4,7 +4,7 @@ import { useParallax, ParallaxProvider } from 'react-scroll-parallax';
 import { HeroBanner } from '../components/hero-banner';
 
 export const TestGrounds = () => {
-    const parallax1 = useParallax({ speed: 30, translateX: [10, -10], scale: [2.5, 2] });
+    const parallax1 = useParallax({ speed: 15, translateX: [10, -10], scale: [2.5, 2] });
     const parallax2 = useParallax({
         scale: [1, 2.5], translateX: [0, 10], speed: 5
     });
