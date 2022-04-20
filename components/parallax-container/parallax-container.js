@@ -5,9 +5,9 @@ import { ProfileContent } from "../profile-content";
 
 export const ParallaxContainer = () => {
   const parallax1 = useParallax({
-    speed: 3,
     scale: [1.3, 2],
-    translateX: [10, -20],
+    translateX: [0, -20],
+    translateY: [0, -40],
   });
   const parallax2 = useParallax({
     scale: [1, 1.8],

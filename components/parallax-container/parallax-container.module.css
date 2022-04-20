@@ -5,7 +5,6 @@
     max-width: var(--max-layout-width);
     background-color: #d09c65;
     overflow: hidden;
-    height: 500vh;
     display: grid;
     grid-template-columns: 1fr;
 }
