@@ -14,17 +14,6 @@
     position: relative;
 }
 
-.container::before {
-    position: absolute;
-    content: '';
-    background: url('/overhang.png') no-repeat bottom;
-    background-size: cover;
-    height: 50vw;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-}
-
 /* 
 Limitation of my parallax demo is that I have made
 the decision to absolute position my content. 
@@ -39,6 +28,9 @@ reasonably accomodate all the content
 
     z-index: 5;
     padding: 15px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3));
 }
 
 .mountainsUpper {

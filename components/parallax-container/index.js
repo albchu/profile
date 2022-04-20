@@ -1,1 +1,1 @@
-export { ParallaxContainer } from "./parallax-container";
+export { default } from "./parallax-container";

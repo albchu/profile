@@ -1,8 +1,7 @@
 import Head from "next/head";
 import React from "react";
-import { ParallaxProvider } from "react-scroll-parallax";
 import styles from "../styles/Home.module.css";
-import { ParallaxContainer } from "../components/parallax-container";
+import ParallaxContainer from "../components/parallax-container";
 
 // I believe this is all I need for serverside generation.
 export async function getStaticProps(context) {
@@ -23,19 +22,11 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <ParallaxProvider>
-          <ParallaxContainer />
-        </ParallaxProvider>
+      <main>
+        <ParallaxContainer />
       </main>
     </div>
   );
 };
 
-export default () => {
-  return (
-    <ParallaxProvider>
-      <Home />
-    </ParallaxProvider>
-  );
-};
+export default Home;

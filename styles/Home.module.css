@@ -1,7 +1,5 @@
 .main {
   padding: var(--size-fluid-2) var(--size-fluid-5);
-  max-height: 100vh;
-  overflow-y: auto;
 }
 
 .contents {

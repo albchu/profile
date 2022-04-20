@@ -4,6 +4,7 @@
     font-size: var(--font-size-5);
     letter-spacing: var(--font-letterspacing-2);
     text-align: right;
+    color: var(--gray-3)
 }
 
 .titleBlock {
@@ -15,7 +16,7 @@
 
 .role {
     font-size: var(--font-size-4);
-    font-weight: var(--font-weight-7);
+    font-weight: var(--font-weight-6);
     white-space: nowrap;
 }
 
@@ -27,31 +28,38 @@
 
 .container {
     padding: var(--size-1) 0 var(--size-2);
+    cursor: pointer;
+    color: var(--gray-4);
+    text-shadow: 1px 1px 12px var(--gray-9);
+}
+
+.container:focus, .container:active {
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+}
+
+/* Hover styling is sticky on touch devices. This fixes that */
+@media (hover: hover) {
+    .container:hover {
+        background: rgba(255, 255, 255, 0.21);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.3px);
+        -webkit-backdrop-filter: blur(2.3px);
+    }
 }
 
 .header {
-    margin: var(--size-1);
     padding: var(--size-2);
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: var(--size-4);
-    cursor: pointer;
     box-sizing: border-box;
     border-radius: var(--radius-3)
-}
-
-.header:focus, .header:active {
-    margin: 0;
-    border: var(--size-1) var(--blue-5) solid;
-}
-
-/* Hover styling is sticky on touch devices. This fixes that */
-@media (hover: hover) {
-    .header:hover {
-        margin: 0;
-        border: var(--size-1) var(--blue-5) solid;
-    }
 }
 
 .header img {
@@ -98,15 +106,19 @@
 
 .detailsExpanded {
     max-height: 600px;
+}
+
+.detailsFooter {
     padding-bottom: var(--size-3);
 }
 
 .companyLink:hover, .companyLink:active {
-    color: var(--indigo-3);
+    color: var(--indigo-1);
 }
 
 .companyLink {
-    color: var(--indigo-5);
+    text-shadow: 1px 1px 12px hsl(var(--gray-9-hsl) / 80%);
+    color: var(--indigo-2);
     display: flex;
     flex-direction: row;
     gap: var(--size-2);
@@ -114,15 +126,15 @@
 }
 
 .companyLink:hover svg, .companyLink:active svg {
-    fill: var(--indigo-4);
+    fill: var(--gray-1);
     opacity: 0.9;
 }
 
 .companyLink svg {
-    fill: var(--indigo-6);
+    opacity: 0.5;
+    fill: var(--gray-3);
     height: 100%;
     width: var(--size-3);
-    opacity: 0.5
 }
 
 @media (max-width: 900px) {

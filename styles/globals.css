@@ -1,5 +1,6 @@
 @import "open-props/style";
 @import "open-props/normalize";
+@import "open-props/colors-hsl";
 
 html,
 body {
@@ -23,7 +24,8 @@ a {
 p {
   font-size: var(--font-size-3);
   font-weight: var(--font-weight-5);
-  color: var(--gray-5);
+  color: var(--gray-2);
+  text-shadow: 1px 1px 12px hsl(var(--gray-9-hsl) / 50%);
   letter-spacing: var(--font-letterspacing-1);
 }
 

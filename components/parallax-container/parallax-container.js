@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./parallax-container.module.css";
-import { useParallax } from "react-scroll-parallax";
+import { useParallax, ParallaxProvider } from "react-scroll-parallax";
 import { ProfileContent } from "../profile-content";
 
 export const ParallaxContainer = () => {
@@ -22,5 +22,13 @@ export const ParallaxContainer = () => {
       <div className={styles.mountainsUpper} ref={parallax1.ref} />
       <div className={styles.mountainsLower} ref={parallax2.ref} />
     </div>
+  );
+};
+
+export default () => {
+  return (
+    <ParallaxProvider>
+      <ParallaxContainer />
+    </ParallaxProvider>
   );
 };
