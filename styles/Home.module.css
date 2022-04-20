@@ -1,25 +1,3 @@
-@keyframes slide-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(-100%)
-  }
-}
-
-@keyframes slide-in-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-
-  60% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .footer {
   padding: var(--size-9);
   display: flex;
@@ -42,89 +20,14 @@
   overflow-y: auto;
 }
 
-.banner {
-  background-image: var(--gradient-26);
-  padding: var(--size-fluid-5);
-  border-radius: var(--radius-3);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.bannerContent {
-  animation: slide-in-right 0.4s;
-  z-index: var(--layer-1);
-}
-
-.socials {
-  padding-top: var(--size-2);
-  animation: slide-in-down 0.8s;
-  display: flex;
-  flex-direction: row;
-  gap: var(--size-fluid-2);
-  justify-content: center;
-}
-
-.socials svg {
-  fill: var(--blue-9);
-  width: 78px;
-  transition: fill .2s
-}
-
-.socials svg:hover {
-  fill: var(--blue-7);
-}
-
-.heroImage {
-  height: 100%;
-  width: 20em;
-  z-index: var(--layer-2);
-  min-width: 200px;
-}
-
-.heroTitle {
-  font-size: var(--font-size-6);
-  font-weight: var(--font-weight-4);
-  color: var(--indigo-9);
-  white-space: nowrap;
-}
-
-.heroName {
-  font-size: var(--font-size-8);
-  font-weight: var(--font-weight-7);
-  line-height: 0.9em;
-  color: var(--indigo-9);
-  white-space: nowrap;
-}
-
 .contents {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media (max-width: 900px) {
-  .banner {
-    flex-direction: column;
-    gap: var(--size-4);
-  }
-
-  .bannerContent {
-    text-align: center;
-    animation: slide-in-down 0.4s;
-  }
-}
 
 @media (max-width: 560px) {
-  .heroTitle {
-    font-size: var(--font-size-5);
-  }
-
-  .heroName {
-    font-size: var(--font-size-6);
-  }
-
   .main {
     padding: var(--size-fluid-2) var(--size-fluid-3);
   }
@@ -134,15 +37,5 @@
 @media (max-width: 450px) {
   .main {
     padding: var(--size-fluid-2) var(--size-fluid-2);
-  }
-}
-
-@media (max-width: 380px) {
-  .heroTitle {
-    font-size: var(--font-size-4);
-  }
-
-  .heroName {
-    font-size: var(--font-size-5);
   }
 }

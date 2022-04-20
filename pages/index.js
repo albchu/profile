@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { EnvelopeLogo } from '../components/envelope-logo'
 import { ExperienceItem } from '../components/experience-item'
 import { GitHubLogo } from '../components/github-logo'
+import { HeroBanner } from '../components/hero-banner'
 import { LabelledSection } from '../components/labelled-section'
 import { LinkedinLogo } from '../components/linkedin-logo'
 import styles from '../styles/Home.module.css'
@@ -23,27 +24,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.banner}>
-          <img src="/face.png" alt="mugshot" className={styles.heroImage} />
-          <div className={styles.bannerContent}>
-            <div className={styles.heroName}>Albert Chu</div>
-            <div className={styles.heroTitle}>Web Developer</div>
-            <div className={styles.socials}>
-
-              <a href="https://github.com/albchu">
-                <GitHubLogo />
-              </a>
-
-              <a href="https://www.linkedin.com/in/albchu/">
-                <LinkedinLogo />
-              </a>
-
-              <a href="mailto:albertchu539@gmail.com">
-                <EnvelopeLogo />
-              </a>
-            </div>
-          </div>
-        </div>
+        <HeroBanner />
 
         <div className={styles.contents}>
           <LabelledSection title="About Me">
