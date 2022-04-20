@@ -17,11 +17,15 @@ export const ParallaxContainer = () => {
 
   return (
     <div className={styles.container}>
-      <ProfileContent className={styles.contentContainer} />
+      <div className={styles.contentContainer}>
+        <ProfileContent />
+      </div>
 
-      <div className={styles.sky} />
-      <div className={styles.mountainsUpper} ref={parallax1.ref} />
-      <div className={styles.mountainsLower} ref={parallax2.ref} />
+      <div className={styles.parallaxBG}>
+        <div className={styles.sky} />
+        <div className={styles.mountainsUpper} ref={parallax1.ref} />
+        <div className={styles.mountainsLower} ref={parallax2.ref} />
+      </div>
     </div>
   );
 };

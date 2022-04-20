@@ -4,31 +4,25 @@
     margin: auto;
     max-width: var(--max-layout-width);
     background-color: #d09c65;
-    align-items: center;
-    display: flex;
     overflow: hidden;
     height: 500vh;
-    flex-direction: column;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
+.parallaxBG {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index: var(--layer-1);
+}
 
-/* 
-Limitation of my parallax demo is that I have made
-the decision to absolute position my content. 
-As such, there is the risk that the background is 
-longer or shorter than the actual content. 
-I will need to manually adjust the container height to 
-reasonably accomodate all the content 
-*/
 .contentContainer {
-    position: absolute;
-    inset: 0 0 0 0;
-
-    z-index: 5;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index: var(--layer-2);
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3));
+        linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2));
 }
 
 .sky {
