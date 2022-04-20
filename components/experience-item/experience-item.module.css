@@ -101,7 +101,7 @@
     transition: max-height 0.3s ease-out;
     height: auto;
     max-height: 0;
-    padding-left: var(--size-3);
+    padding-left: 90px;
 }
 
 .detailsExpanded {
@@ -157,7 +157,7 @@
     }
 
     .details {
-        padding-left: 0;
+        padding-left: var(--size-3);
     }
 
     .role {
@@ -195,5 +195,9 @@
 @media (max-width: 370px) {
     .header img {
         display: none;
+    }
+
+    .details {
+        padding-left: var(--size-2);
     }
 }

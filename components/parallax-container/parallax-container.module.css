@@ -1,18 +1,17 @@
 .container {
     --max-layout-width: 1550px;
     --mountain-length: min(100vw, var(--max-layout-width));
-
     margin: auto;
     max-width: var(--max-layout-width);
-    background-color: #f6e1b6;
+    background-color: #d09c65;
     align-items: center;
     display: flex;
     overflow: hidden;
     height: 500vh;
     flex-direction: column;
-    padding-top: 800px;
     position: relative;
 }
+
 
 /* 
 Limitation of my parallax demo is that I have made
@@ -27,10 +26,15 @@ reasonably accomodate all the content
     inset: 0 0 0 0;
 
     z-index: 5;
-    padding: 15px;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.3));
+}
+
+.sky {
+    background-color: #f6e1b6;
+    height: 100vh;
+    width: var(--mountain-length);
 }
 
 .mountainsUpper {
@@ -38,7 +42,7 @@ reasonably accomodate all the content
 
     height: var(--mountain-length);
     width: var(--mountain-length);
-    background: url('/mountains-upper.svg') no-repeat center;
+    background: #f6e1b6 url('/mountains-upper.svg') no-repeat center;
     background-size: contain;
 }
 
@@ -67,10 +71,10 @@ reasonably accomodate all the content
 .mountainsLower::before {
     position: absolute;
     background-color: #d09c65;
-    /* Cant use 100%. We need the overlap so that this filler blends in. */
+    /* Cant use 100%. We need the overlap so that this filler blends in. top: 99%; */
     top: 99%;
     left: 0;
     right: 0;
-    height: calc(var(--mountain-length) * 2);
+    height: var(--mountain-length);
     content: '';
 }
