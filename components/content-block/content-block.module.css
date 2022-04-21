@@ -1,7 +1,9 @@
 .container {
     display: grid;
     grid-template-areas: ". title"
-        "secondaryContent description"
+        "secondaryContent description";
+    color: var(--gray-3);
+
 }
 
 .title {
