@@ -46,14 +46,15 @@
 }
 
 .socials svg {
-    fill: var(--blue-8);
+    fill: var(--blue-7);
     width: 78px;
     transition: fill .2s;
     filter: drop-shadow(3px 5px 8px hsl(var(--gray-9-hsl) / 30%));
 }
 
 .socials svg:hover {
-    fill: var(--orange-8);
+    fill: var(--blue-7);
+    filter: drop-shadow(3px 5px 8px hsl(var(--gray-9-hsl) / 0%));
 }
 
 .heroImage {
@@ -66,7 +67,7 @@
 .heroTitle {
     font-size: var(--font-size-6);
     font-weight: var(--font-weight-4);
-    color: var(--blue-6);
+    color: var(--blue-8);
     white-space: nowrap;
     text-shadow: 1px 1px 8px hsl(var(--gray-9-hsl) / 20%);
 }
@@ -75,7 +76,7 @@
     font-size: var(--font-size-8);
     font-weight: var(--font-weight-7);
     line-height: 0.9em;
-    color: var(--blue-6);
+    color: var(--blue-8);
     white-space: nowrap;
 }
 

@@ -1,6 +1,7 @@
 .container {
     --max-layout-width: 1550px;
     --mountain-length: min(100vw, var(--max-layout-width));
+    --sky-color: var(--pink-4);
     margin: auto;
     max-width: var(--max-layout-width);
     background-color: #d09c65;
@@ -25,7 +26,7 @@
 }
 
 .sky {
-    background-color: #f6e1b6;
+    background-color: var(--sky-color);
     height: 100vh;
     width: var(--mountain-length);
 }
@@ -35,7 +36,7 @@
 
     height: var(--mountain-length);
     width: var(--mountain-length);
-    background: #f6e1b6 url('/mountains-upper.svg') no-repeat center;
+    background: var(--sky-color) url('/mountains-upper.svg') no-repeat center;
     background-size: contain;
 }
 

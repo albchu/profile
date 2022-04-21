@@ -2,7 +2,7 @@ import { LabelledSection } from "./labelled-section";
 
 export default function AboutMe() {
   return (
-    <LabelledSection title="About Me">
+    <LabelledSection title="About Me" hideBG>
       <p>
         I&apos;m a web developer that enjoys pragmatically solving complex
         problems. I am comfortable working all over the tech stack but I hold a
