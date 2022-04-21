@@ -4,7 +4,11 @@ import styles from "./portfolio.module.css";
 
 export default function Portfolio() {
   return (
-    <LabelledSection title="Portfolio" hideBG>
+    <LabelledSection
+      title="Portfolio"
+      hideBG
+      imgPath="/memojis/computer-pink.png"
+    >
       <div className={styles.container}>
         <ContentBlock
           title="Profile Website"

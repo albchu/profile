@@ -4,7 +4,11 @@ import styles from "./expertise.module.css";
 
 export default function Expertise() {
   return (
-    <LabelledSection title="Expertise" hideBG>
+    <LabelledSection
+      title="Expertise"
+      hideBG
+      imgPath="/memojis/blue-side-talk.png"
+    >
       <div className={styles.container}>
         <ContentBlock
           title="React.js"

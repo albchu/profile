@@ -3,7 +3,7 @@ import { LabelledSection } from "./labelled-section";
 
 export default function Experience() {
   return (
-    <LabelledSection title="Experience">
+    <LabelledSection title="Experience" imgPath="/memojis/nerd-hand-out.png">
       <ExperienceItem
         company="ZenHub"
         role="Senior Frontend Developer"

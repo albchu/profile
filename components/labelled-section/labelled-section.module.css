@@ -1,11 +1,25 @@
 .title {
-    margin-top: var(--size-fluid-4);
-    margin-bottom: var(--size-fluid-1);
+
     font-weight: var(--font-weight-7);
     color: var(--orange-4);
     text-shadow: 1px 1px 8px hsl(var(--gray-9-hsl) / 80%);
     font-size: var(--font-size-fluid-3);
-    padding: var(--size-4);
+    grid-area: title;
+}
+
+.titleImg {
+    grid-area: titleImg;
+    height: 100%;
+    width: 200px;
+    object-fit: contain;
+}
+
+.titleBlock {
+    margin-top: var(--size-fluid-4);
+    margin-bottom: var(--size-3);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .sectionContents {
@@ -26,11 +40,17 @@
     max-inline-size: unset;
 }
 
+@media (max-width: 900px) {
+    .titleImg {
+        height: 100%;
+        width: 100px;
+    }
+}
+
 @media (max-width: 500px) {
     .title {
         padding: var(--size-2);
     }
-
 
     .sectionContents {
         padding: var(--size-2);

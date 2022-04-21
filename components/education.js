@@ -1,10 +1,9 @@
-import { ExperienceItem } from './experience-item'
-import { LabelledSection } from './labelled-section'
+import { ExperienceItem } from "./experience-item";
+import { LabelledSection } from "./labelled-section";
 
 export default function Education() {
   return (
-
-    <LabelledSection title="Education">
+    <LabelledSection title="Education" imgPath="/memojis/education.png">
       <ExperienceItem
         company="University of Calgary"
         role="Bachelors of Science"
@@ -13,9 +12,11 @@ export default function Education() {
         logoPath="/ucalgary-logo.jpg"
       >
         <p>
-          Majored in Computer Science with a concentration in Game Development. I balanced my internship with full-time studies to ensure that I was industry ready by graduation.
+          Majored in Computer Science with a concentration in Game Development.
+          I balanced my internship with full-time studies to ensure that I was
+          industry ready by graduation.
         </p>
       </ExperienceItem>
     </LabelledSection>
-  )
+  );
 }
