@@ -11,7 +11,8 @@
     font-size: var(--font-size-6);
     font-weight: var(--font-weight-6);
     letter-spacing: var(--font-letterspacing-2);
-    padding-bottom: var(--size-2)
+    padding-bottom: var(--size-2);
+    position: relative;
 }
 
 .description {
@@ -19,7 +20,7 @@
     font-size: var(--font-size-3);
     position: relative;
     letter-spacing: var(--font-letterspacing-2);
-    padding-left: var(--size-4);
+    padding: 0 var(--size-4);
 }
 
 .description::before {
@@ -39,6 +40,89 @@
 }
 
 .secondaryContent {
+    position: relative;
     grid-area: secondaryContent;
     padding-right: var(--size-3)
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+            "title secondaryContent"
+            "description description";
+        grid-template-columns: auto 1fr;
+        grid-column-gap: var(--size-2)
+    }
+
+    .secondaryContent {
+        align-self: center;
+        padding-left: var(--size-2)
+    }
+
+    .secondaryContent::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: var(--size-1);
+        background-color: var(--orange-3);
+        border-radius: var(--radius-3);
+    }
+
+    .title {
+        padding: 0;
+        align-self: center;
+        font-size: var(--font-size-5);
+    }
+
+    .img {
+        width: 50px;
+        object-fit: contain;
+    }
+
+    .description::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: var(--size-2);
+        background-color: var(--orange-3);
+        border-radius: var(--radius-3);
+    }
+}
+
+@media (max-width: 500px) {
+    .description {
+        font-size: var(--font-size-1);
+        letter-spacing: var(--font-letterspacing-2);
+    }
+
+    .title {
+        padding: 0;
+        align-self: center;
+        font-size: var(--font-size-4);
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        grid-template-areas:
+            "title"
+            "secondaryContent"
+            "description";
+        grid-column-gap: var(--size-2)
+    }
+
+    .secondaryContent::before {
+        bottom: -10px;
+        width: var(--size-2);
+    }
+
+    .description {
+        font-size: var(--font-size-0);
+        letter-spacing: var(--font-letterspacing-2);
+    }
+
 }

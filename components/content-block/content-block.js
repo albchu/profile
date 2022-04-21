@@ -2,7 +2,6 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./content-block.module.css";
 
-// TODO: Support images?
 export const ContentBlock = ({
   className,
   title,
