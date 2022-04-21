@@ -3,6 +3,7 @@ import { ArrowUpRightFromSquareIcon } from "../arrow-up-right-from-square-icon";
 import styles from "./experience-item.module.css";
 import clsx from "clsx";
 import { ChevronDownIcon } from "../chevron-down-icon";
+import { ExternalLink } from "../external-link";
 
 export const ExperienceItem = ({
   logoPath,
@@ -25,10 +26,7 @@ export const ExperienceItem = ({
           <div className={styles.titleBlock}>
             <div className={styles.company}>
               {companyUrl ? (
-                <a href={companyUrl} className={styles.companyLink}>
-                  {company}
-                  <ArrowUpRightFromSquareIcon />
-                </a>
+                <ExternalLink displayName={company} href={companyUrl} />
               ) : (
                 company
               )}

@@ -112,30 +112,6 @@
     padding-bottom: var(--size-3);
 }
 
-.companyLink:hover, .companyLink:active {
-    color: var(--indigo-1);
-}
-
-.companyLink {
-    text-shadow: 1px 1px 12px hsl(var(--gray-9-hsl) / 80%);
-    color: var(--indigo-2);
-    display: flex;
-    flex-direction: row;
-    gap: var(--size-2);
-    align-items: center;
-}
-
-.companyLink:hover svg, .companyLink:active svg {
-    fill: var(--gray-1);
-    opacity: 0.9;
-}
-
-.companyLink svg {
-    opacity: 0.5;
-    fill: var(--gray-3);
-    height: 100%;
-    width: var(--size-3);
-}
 
 @media (max-width: 900px) {
     .headerContents {

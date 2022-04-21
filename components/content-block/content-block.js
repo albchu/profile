@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./content-block.module.css";
+import { ExternalLink } from "../external-link";
 
 export const ContentBlock = ({
   className,
@@ -17,8 +18,8 @@ export const ContentBlock = ({
           <img className={styles.img} src={imgPath} />
         ) : (
           <div className={styles.links}>
-            {links.map(({ displayName, href }) => (
-              <a href={href}>{displayName}</a>
+            {links.map((linkProps) => (
+              <ExternalLink {...linkProps} />
             ))}
           </div>
         )}

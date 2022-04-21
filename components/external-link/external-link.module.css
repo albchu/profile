@@ -1,0 +1,24 @@
+.link:hover, .link:active {
+    color: var(--indigo-1);
+}
+
+.link {
+    text-shadow: 1px 1px 12px hsl(var(--gray-9-hsl) / 80%);
+    color: var(--indigo-2);
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-2);
+    align-items: center;
+}
+
+.link:hover svg, .link:active svg {
+    fill: var(--gray-1);
+    opacity: 0.9;
+}
+
+.link svg {
+    opacity: 0.5;
+    fill: var(--gray-3);
+    height: 100%;
+    width: var(--size-3);
+}

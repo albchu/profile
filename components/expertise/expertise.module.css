@@ -4,7 +4,7 @@
         ". nodeBlock nodeBlock"
         "detailBlock detailBlock ."
         ". qualityBlock qualityBlock";
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-row-gap: var(--size-8)
 }
 
@@ -14,7 +14,6 @@
 
 .nodeBlock {
     grid-area: nodeBlock;
-    justify-self: end;
 }
 
 .detailBlock {
@@ -23,7 +22,6 @@
 
 .qualityBlock {
     grid-area: qualityBlock;
-    justify-self: end;
 }
 
 @media (max-width: 900px) {
