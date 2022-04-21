@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-areas: "reactBlock reactBlock ."
+        ". nodeBlock nodeBlock"
+        "detailBlock detailBlock ."
+        ". qualityBlock qualityBlock";
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-row-gap: var(--size-8)
+}
+
+.reactBlock {
+    grid-area: reactBlock;
+}
+
+.nodeBlock {
+    grid-area: nodeBlock;
+    justify-self: end;
+}
+
+.detailBlock {
+    grid-area: detailBlock;
+}
+
+.qualityBlock {
+    grid-area: qualityBlock;
+    justify-self: end;
+}

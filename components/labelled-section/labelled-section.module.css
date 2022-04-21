@@ -9,9 +9,11 @@
 }
 
 .sectionContents {
-    max-width: 800px;
-
+    max-width: 900px;
     padding: var(--size-4);
+}
+
+.sectionBG {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

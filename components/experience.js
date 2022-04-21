@@ -1,5 +1,5 @@
-import { ExperienceItem } from './experience-item'
-import { LabelledSection } from './labelled-section'
+import { ExperienceItem } from "./experience-item";
+import { LabelledSection } from "./labelled-section";
 
 export default function Experience() {
   return (
@@ -12,7 +12,12 @@ export default function Experience() {
         logoPath="/zenhub-logo.png"
       >
         <p>
-          I focused on developing features that would improve the developer experience in project management. As a senior member of the team, I am a thought leader for development efforts on complex features. My responsibilities are a balance between development and communicating with PMs and QAs to address priorities quickly. I have a critical role in developing and launching the ZenHub Platform.
+          I focused on developing features that would improve the developer
+          experience in project management. As a senior member of the team, I am
+          a thought leader for development efforts on complex features. My
+          responsibilities are a balance between development and communicating
+          with PMs and QAs to address priorities quickly. I have a critical role
+          in developing and launching the ZenHub Platform.
         </p>
       </ExperienceItem>
 
@@ -24,8 +29,15 @@ export default function Experience() {
         logoPath="/ambyint-logo.png"
       >
         <p>
-          Senior member of an agile team building a lift-optimization platform agnostic to lift types. Focused on building a highly functional platform to innovate and disrupt the Oil and Gas sector. Distributed Nodejs backend built in the CQRS pattern using Kafka backed onto MongoDB.
-          Worked closely with design and QA to ensure features developed across the stack are delivered to a high quality. I strive to demonstrate technical leadership in my role. A portion of my days was allocated to reviewing pull requests and individual technical mentorship for team members.
+          Senior member of an agile team building a lift-optimization platform
+          agnostic to lift types. Focused on building a highly functional
+          platform to innovate and disrupt the Oil and Gas sector. Distributed
+          Nodejs backend built in the CQRS pattern using Kafka backed onto
+          MongoDB. Worked closely with design and QA to ensure features
+          developed across the stack are delivered to a high quality. I strive
+          to demonstrate technical leadership in my role. A portion of my days
+          was allocated to reviewing pull requests and individual technical
+          mentorship for team members.
         </p>
       </ExperienceItem>
 
@@ -37,9 +49,15 @@ export default function Experience() {
         logoPath="/replicon-logo.png"
       >
         <p>
-          Full-stack dev on a productivity cloud platform. Node.js backend deployed on AWS and using a mix of AWS technologies. React.js frontend using GraphQL as a middleware to query a C# backend. Worked closely with the UX team to iterate and develop prototype designs into deployable production ready code.
-
-          Additionally designed and developed a performance metrics database and visualization frontend with React.js and Highcharts. The objective was to create a system for visualizing test metrics in order to gain visibility into areas of concern.
+          Full-stack dev on a productivity cloud platform. Node.js backend
+          deployed on AWS and using a mix of AWS technologies. React.js frontend
+          using GraphQL as a middleware to query a C# backend. Worked closely
+          with the UX team to iterate and develop prototype designs into
+          deployable production ready code. Additionally designed and developed
+          a performance metrics database and visualization frontend with
+          React.js and Highcharts. The objective was to create a system for
+          visualizing test metrics in order to gain visibility into areas of
+          concern.
         </p>
       </ExperienceItem>
 
@@ -51,7 +69,10 @@ export default function Experience() {
         logoPath="/synopsys-logo.png"
       >
         <p>
-          Spearheaded the performance lab to deliver data visualizations to identify bottlenecks and regressions in weekly builds. Additionally, I built out large features for automated testing and triage of the Coverity platform.
+          Spearheaded the performance lab to deliver data visualizations to
+          identify bottlenecks and regressions in weekly builds. Additionally, I
+          built out large features for automated testing and triage of the
+          Coverity platform.
         </p>
       </ExperienceItem>
 
@@ -63,9 +84,12 @@ export default function Experience() {
         logoPath="/coverity-logo.png"
       >
         <p>
-          My first steps into the industry of software development. My main work was around end to end test automation, and performance and scalability testing on unix systems to identify bottlenecks in the static analysis engine.
+          My first steps into the industry of software development. My main work
+          was around end to end test automation, and performance and scalability
+          testing on unix systems to identify bottlenecks in the static analysis
+          engine.
         </p>
       </ExperienceItem>
     </LabelledSection>
-  )
+  );
 }
