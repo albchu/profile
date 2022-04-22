@@ -7,7 +7,7 @@ export const ParallaxContainer = () => {
   const parallax1 = useParallax({
     scale: [1.3, 2],
     translateX: [0, -20],
-    translateY: [0, -40],
+    translateY: [0, -20],
   });
   const parallax2 = useParallax({
     scale: [1, 1.8],
