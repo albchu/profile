@@ -6,8 +6,8 @@ import { ProfileContent } from "../profile-content";
 export const ParallaxContainer = () => {
   const parallax1 = useParallax({
     scale: [1.3, 2],
-    translateX: [0, -20],
-    translateY: [0, -20],
+    translateX: [0, -15],
+    translateY: [0, -15],
   });
   const parallax2 = useParallax({
     scale: [1, 1.8],
@@ -24,6 +24,7 @@ export const ParallaxContainer = () => {
       <div className={styles.parallaxBG}>
         <div className={styles.sky} />
         <div className={styles.mountainsUpper} ref={parallax1.ref} />
+        <div className={styles.mountainsUpperFiller} />
         <div className={styles.mountainsLower} ref={parallax2.ref} />
       </div>
     </div>
