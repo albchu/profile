@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps, router }) {
       </Head>
 
       <main color-scheme={isChoco ? "choco" : "grape"}>
-        <NavBar handleColorSchemeChange={handleColorSchemeChange} />
+        {/* <NavBar handleColorSchemeChange={handleColorSchemeChange} /> */}
         <Component {...pageProps} />
       </main>
     </>
