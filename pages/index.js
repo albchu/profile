@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import styles from "../styles/Home.module.css";
-import ParallaxContainer from "../components/parallax-container";
+import { ProfileContent } from "../components/profile-content";
 
 // I believe this is all I need for serverside generation.
 export async function getStaticProps(context) {
@@ -12,20 +12,20 @@ export async function getStaticProps(context) {
 
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Albert Chuuuuuuu</title>
+        <title>Hey! It's Albert</title>
         <meta
           name="description"
-          content="This is both my resume and portfolio at the same time like an all-in-one shower wash."
+          content="This is both my resume and portfolio at the same time like an all-in-one shampoo and body wash."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <ParallaxContainer />
+        <ProfileContent />
       </main>
-    </div>
+    </>
   );
 };
 

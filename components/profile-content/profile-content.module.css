@@ -1,4 +1,10 @@
-.container {}
+.container {
+    height: 100vh;
+    background-color: var(--surface-1);
+    color: var(--text-1);
+    accent-color: var(--brand);
+    padding: var(--size-9);
+}
 
 .content {
     padding-top: 200px;
