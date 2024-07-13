@@ -5,15 +5,16 @@ export default function AboutMe() {
   return (
     <LabelledSection title="About Me" hideBG imgPath="/memojis/nervous.png">
       <p>
-        I&apos;m a web developer that enjoys pragmatically solving complex
-        problems. I am comfortable working all over the tech stack but I hold a
-        special spot in my heart for frontend development.
+        I&apos;m a web developer that enjoys solving complex problems. I am
+        comfortable working all over the tech stack but frontend always holds a
+        special spot in my heart.
       </p>
       <br />
       <p>
-        Building great user experiences while bringing beautiful designs to life
-        is a driving force in my career. I want to make major impacts in
-        interesting projects to deliver value in meaningful ways.
+        Building great functionality and user experiences with beautiful yet
+        purposeful designs to life is a driving force in my career. I want to
+        make major impacts in interesting projects to deliver work that I'm
+        proud to look back on.
       </p>
       <br />
       <p>
