@@ -42,7 +42,6 @@
     display: flex;
     flex-direction: row;
     gap: var(--size-fluid-2);
-    justify-content: center;
 }
 
 .socials svg {
@@ -65,7 +64,7 @@
 }
 
 .heroTitle {
-    font-size: var(--font-size-6);
+    font-size: var(--font-size-5);
     font-weight: var(--font-weight-4);
     color: var(--blue-8);
     white-space: nowrap;
