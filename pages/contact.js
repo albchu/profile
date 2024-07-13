@@ -11,7 +11,22 @@ export async function getStaticProps(context) {
 }
 
 const Home = () => {
-  return <ProfileContent />;
+  return (
+    <>
+      <Head>
+        <title>Hey! It's Albert</title>
+        <meta
+          name="description"
+          content="This is both my resume and portfolio at the same time like an all-in-one shampoo and body wash."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main>
+        <ProfileContent />
+      </main>
+    </>
+  );
 };
 
 export default Home;

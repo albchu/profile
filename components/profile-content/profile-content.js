@@ -29,9 +29,9 @@ export const ProfileContent = ({ className }) => {
         <Experience />
 
         <Education />
-      </div> */}
+      </div> 
 
-      {/* <div className={styles.footer}>
+       <div className={styles.footer}>
         <img src="/pineapple.png" />
         <p>You've made it to the end.</p>
         <p>Thanks for visiting!</p>
