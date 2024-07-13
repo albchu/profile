@@ -9,14 +9,10 @@ import { HeroBanner } from "../hero-banner";
 import ToggleSwitch from "../toggle-switch/toggle-switch";
 
 export const ProfileContent = ({ className }) => {
-  const [isChoco, setIsChoco] = useState(false);
-  const handleColorSchemeChange = (isDarkMode) => {
-    setIsChoco(isDarkMode);
-  }
 
   return (
-    <div className={styles.container} color-scheme={isChoco? "choco": "grape"}>
-      <ToggleSwitch onChange={handleColorSchemeChange}/>
+    <div className={styles.container}>
+      {/* <ToggleSwitch onChange={handleColorSchemeChange}/> */}
       <HeroBanner />
       <h1>Hey this is now a work in progress!</h1>
       {/* <div className={styles.content}>
