@@ -20,6 +20,16 @@
     }
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 .banner {
     /* background-image: var(--gradient-26); */
@@ -32,7 +42,7 @@
 }
 
 .bannerContent {
-    animation: slide-in-right 0.4s;
+    animation: slide-in-right 0.3s;
     z-index: var(--layer-1);
 }
 
@@ -48,7 +58,7 @@
     fill: var(--blue-7);
     width: 78px;
     transition: fill .2s;
-    filter: drop-shadow(3px 5px 8px hsl(var(--gray-9-hsl) / 30%));
+    filter: drop-shadow(3px 5px 8px hsl(var(--gray-9-hsl) / 5%));
 }
 
 .socials svg:hover {
@@ -64,6 +74,7 @@
 }
 
 .heroTitle {
+    animation: fade-in 0.8s ease-in-out forwards;
     font-size: var(--font-size-5);
     font-weight: var(--font-weight-4);
     color: var(--blue-8);
