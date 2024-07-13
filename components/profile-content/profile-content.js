@@ -12,7 +12,7 @@ export const ProfileContent = ({ className }) => {
     <div className={styles.container}>
       <HeroBanner />
       <h1>Hey this is now a work in progress!</h1>
-      <div className={styles.content}>
+      {/* <div className={styles.content}>
         <AboutMe />
 
         <Expertise />
@@ -22,13 +22,13 @@ export const ProfileContent = ({ className }) => {
         <Experience />
 
         <Education />
-      </div>
+      </div> */}
 
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <img src="/pineapple.png" />
         <p>You've made it to the end.</p>
         <p>Thanks for visiting!</p>
-      </div>
+      </div> */}
     </div>
   );
 };
