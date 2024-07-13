@@ -34,6 +34,17 @@
 }
 
 html {
+  /* light */
+  --brand-light: var(--orange-6);
+  --text-1-light: var(--gray-8);
+  --text-2-light: var(--gray-7);
+  --surface-1-light: var(--gray-0);
+  --surface-2-light: var(--gray-1);
+  --surface-3-light: var(--gray-2);
+  --surface-4-light: var(--gray-3);
+  --surface-shadow-light: var(--gray-8-hsl);
+  --shadow-strength-light: 2%;
+
   /* dim */
   --brand-dim: var(--orange-4);
   --text-1-dim: var(--gray-3);
@@ -68,7 +79,7 @@ html {
   --shadow-strength-choco: 50%;
 }
 
-[color-scheme="dim"] {
+/* [color-scheme="dim"] {
   color-scheme: dark;
 
   --brand: var(--brand-dim);
@@ -80,9 +91,9 @@ html {
   --surface-4: var(--surface-4-dim);
   --surface-shadow: var(--surface-shadow-dim);
   --shadow-strength: var(--shadow-strength-dim);
-}
+} */
 
-[color-scheme="grape"] {
+[color-scheme="light"] {
   color-scheme: light;
 
   --brand: var(--brand-grape);
@@ -96,16 +107,21 @@ html {
   --shadow-strength: var(--shadow-strength-grape);
 }
 
-[color-scheme="choco"] {
-  color-scheme: light;
+[color-scheme="dark"] {
+  color-scheme: dark;
 
   --brand: var(--brand-choco);
   --text-1: var(--text-1-choco);
   --text-2: var(--text-2-choco);
-  --surface-1: var(--surface-1-choco);
+  /* --surface-1: var(--surface-1-choco);
   --surface-2: var(--surface-2-choco);
   --surface-3: var(--surface-3-choco);
-  --surface-4: var(--surface-4-choco);
+  --surface-4: var(--surface-4-choco); */
+  --surface-1: var(--surface-1-dim);
+  --surface-2: var(--surface-2-dim);
+  --surface-3: var(--surface-3-dim);
+  --surface-4: var(--surface-4-dim);
+
   --surface-shadow: var(--surface-shadow-choco);
   --shadow-strength: var(--shadow-strength-choco);
 }
@@ -135,12 +151,6 @@ h1 {
   font-weight: var(--font-weight-1);
 }
 
-p {
-  max-inline-size: var(--size-content-1);
-  font-size: var(--font-size-4);
-  line-height: var(--font-lineheight-3);
-}
-
 header {
   display: inline-grid;
   gap: var(--size-3);
@@ -156,16 +166,18 @@ a {
 }
 
 p {
+  color: var(--text-2);
   font-size: var(--font-size-3);
   font-weight: var(--font-weight-4);
-  color: var(--gray-2);
-  text-shadow: 1px 1px 12px hsl(var(--gray-9-hsl) / 50%);
   letter-spacing: var(--font-letterspacing-1);
+  line-height: var(--font-lineheight-3);
+  max-inline-size: var(--size-content-1);
+  text-shadow: 1px 1px 12px hsl(var(--surface-3) / 50%);
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   p {
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-4);
   }
-}
+} */

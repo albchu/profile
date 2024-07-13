@@ -21,8 +21,8 @@ function MyApp({ Component, pageProps, router }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main color-scheme={isChoco ? "choco" : "grape"}>
-        {/* <NavBar handleColorSchemeChange={handleColorSchemeChange} /> */}
+      <main color-scheme={isChoco ? "dark" : "light"}>
+        <NavBar handleColorSchemeChange={handleColorSchemeChange} />
         <Component {...pageProps} />
       </main>
     </>

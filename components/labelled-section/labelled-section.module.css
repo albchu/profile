@@ -1,61 +1,61 @@
 main:has(.container) {
-    background-color: var(--surface-3); 
+  background-color: var(--surface-3);
 }
 
 .title {
-    font-weight: var(--font-weight-7);
-    color: var(--text-2);
-    text-shadow: 1px 1px 8px hsl(var(--gray-9-hsl) / 80%);
-    font-size: var(--font-size-fluid-3);
-    grid-area: title;
+  font-weight: var(--font-weight-7);
+  color: var(--text-2);
+  text-shadow: 1px 1px 8px hsl(var(--surface-1) / 80%);
+  font-size: var(--font-size-fluid-3);
+  grid-area: title;
 }
 
 .titleImg {
-    grid-area: titleImg;
-    height: 100%;
-    width: 200px;
-    object-fit: contain;
+  grid-area: titleImg;
+  height: 100%;
+  width: 200px;
+  object-fit: contain;
 }
 
 .titleBlock {
-    margin-top: var(--size-fluid-4);
-    margin-bottom: var(--size-3);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+  margin-top: var(--size-fluid-4);
+  margin-bottom: var(--size-3);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .sectionContents {
-    max-width: 900px;
-    padding: var(--size-4);
+  max-width: 900px;
+  padding: var(--size-4);
 }
 
 .sectionBG {
-    background: var(--surface-2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.9px);
-    -webkit-backdrop-filter: blur(1.9px);
-    border: 1px solid rgba(255, 255, 255, 0.089);
+  background: var(--surface-2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  border: 1px solid rgba(255, 255, 255, 0.089);
 }
 
 .sectionContents p {
-    max-inline-size: unset;
+  max-inline-size: unset;
 }
 
 @media (max-width: 900px) {
-    .titleImg {
-        height: 100%;
-        width: 100px;
-    }
+  .titleImg {
+    height: 100%;
+    width: 100px;
+  }
 }
 
 @media (max-width: 500px) {
-    .title {
-        padding: var(--size-2);
-    }
+  .title {
+    padding: var(--size-2);
+  }
 
-    .sectionContents {
-        padding: var(--size-2);
-    }
+  .sectionContents {
+    padding: var(--size-2);
+  }
 }
