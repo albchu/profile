@@ -1,4 +1,4 @@
-import AboutMe from "../components/about-me";
+import Expertise from "../components/expertise";
 
 // I believe this is all I need for serverside generation.
 export async function getStaticProps(context) {
@@ -7,4 +7,4 @@ export async function getStaticProps(context) {
   };
 }
 
-export default AboutMe;
+export default Expertise;
