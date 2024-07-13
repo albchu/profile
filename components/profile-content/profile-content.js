@@ -11,7 +11,7 @@ export const ProfileContent = ({ className }) => {
   return (
     <div className={styles.container}>
       <HeroBanner />
-
+      <h1>Hey this is now a work in progress!</h1>
       <div className={styles.content}>
         <AboutMe />
 
