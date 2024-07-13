@@ -1,3 +1,4 @@
+import React from "react";
 import { ContentBlock } from "../content-block";
 import { LabelledSection } from "../labelled-section";
 import styles from "./portfolio.module.css";

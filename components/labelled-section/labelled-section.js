@@ -4,7 +4,7 @@ import styles from "./labelled-section.module.css";
 
 export const LabelledSection = ({ title, children, hideBG, imgPath }) => {
   return (
-    <section>
+    <section className={styles.container}>
       <div className={styles.titleBlock}>
         <img className={styles.titleImg} src={imgPath} alt={imgPath} />
         <h2 className={styles.title}>{title}</h2>

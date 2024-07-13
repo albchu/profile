@@ -30,6 +30,9 @@
     }
 }
 
+main:has(.banner) {
+    background-color: var(--surface-1); 
+}
 
 .banner {
     /* background-image: var(--gradient-26); */

@@ -1,3 +1,4 @@
+import React from "react";
 import { LabelledSection } from "./labelled-section";
 
 export default function AboutMe() {

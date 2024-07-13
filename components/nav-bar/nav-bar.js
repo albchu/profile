@@ -20,6 +20,9 @@ const Navbar = ({handleColorSchemeChange}) => {
           <Link href="/expertise">Expertise</Link>
         </li>
         <li>
+          <Link href="/portfolio">Portfolio</Link>
+        </li>
+        <li>
           <Link href="/experience">Experience</Link>
         </li>
         <li>

@@ -123,6 +123,7 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  transition: background-color 0.5s;
 }
 
 section {

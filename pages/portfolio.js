@@ -1,4 +1,4 @@
-import { HeroBanner } from "../components/hero-banner";
+import Portfolio from "../components/portfolio";
 
 // I believe this is all I need for serverside generation.
 export async function getStaticProps(context) {
@@ -7,4 +7,4 @@ export async function getStaticProps(context) {
   };
 }
 
-export default HeroBanner;
+export default Portfolio;
