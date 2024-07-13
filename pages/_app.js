@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import { NavBar } from "../components/nav-bar";
-import { PageTransition } from "../components/page-transition";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps, router }) {
@@ -16,11 +15,9 @@ function MyApp({ Component, pageProps, router }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar />
       <main>
-        <PageTransition key={router.route}>
-          <Component {...pageProps} />
-        </PageTransition>
+        <NavBar />
+        <Component {...pageProps} />
       </main>
     </>
   );
