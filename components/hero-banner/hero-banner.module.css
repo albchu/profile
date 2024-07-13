@@ -69,12 +69,6 @@ main:has(.banner) {
     filter: drop-shadow(3px 5px 8px hsl(var(--gray-9-hsl) / 0%));
 }
 
-.heroImage {
-    height: 100%;
-    width: 20em;
-    z-index: var(--layer-2);
-    min-width: 200px;
-}
 
 .heroTitle {
     animation: fade-in 0.8s ease-in-out forwards;

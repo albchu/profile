@@ -3,11 +3,14 @@ import { EnvelopeLogo } from "../envelope-logo";
 import { GitHubLogo } from "../github-logo";
 import { LinkedinLogo } from "../linkedin-logo";
 import styles from "./hero-banner.module.css";
+import Image from "next/image";
+import { HeroImage } from "../hero-image";
 
 export const HeroBanner = () => {
   return (
     <div className={styles.banner}>
-      <img src="/face.png" alt="mugshot" className={styles.heroImage} />
+      {/* <img src="/face.png" alt="mugshot" className={styles.heroImage} /> */}
+      <HeroImage />
       <div className={styles.bannerContent}>
         <div className={styles.heroName}>Albert Chu</div>
         <div className={styles.heroTitle}>Full Stack Developer</div>
