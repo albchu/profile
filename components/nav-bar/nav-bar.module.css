@@ -1,15 +1,36 @@
 .navbar {
-  background-color: #333;
   padding: 1rem;
 }
 
 .navbar ul {
   list-style: none;
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(8, 5rem);
+  justify-content: space-between;
 }
 
-.navbar a {
-  color: white;
+.navItem svg {
+  fill: var(--inverse-text-3);
+}
+.navItem a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  cursor: pointer;
+  border-radius: var(--size-3);
+  height:100%;
+  width: 100%;
+  color: var(--inverse-text-2);
+  font-size: var(--size-3);
+}
+
+.navItem span {
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.navItem:hover span {
+  transform: scale(1);
 }
