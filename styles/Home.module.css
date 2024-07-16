@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-
+/* 
 @media (max-width: 560px) {
   .main {
     padding: var(--size-fluid-2) var(--size-fluid-3);
@@ -20,4 +20,4 @@
   .main {
     padding: var(--size-fluid-2) var(--size-fluid-2);
   }
-}
+} */

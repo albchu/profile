@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Head from "next/head";
 import { NavBar } from "../components/nav-bar";
 import "../styles/globals.css";
+import "../styles/breakpoints.css";
 
 function MyApp({ Component, pageProps, router }) {
   const [isChoco, setIsChoco] = useState(false);

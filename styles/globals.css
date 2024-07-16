@@ -1,12 +1,13 @@
 @import "open-props/style";
 @import "open-props/normalize";
+@import "open-props/media";
 @import "open-props/colors-hsl";
 
 :root {
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (--os-dark) {
   :root {
     color-scheme: dark;
   }

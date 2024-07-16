@@ -1,13 +1,10 @@
 .navbar {
-  padding: 1rem;
   position: relative;
   z-index: var(--layer-1);
   overflow: hidden;
-  margin: var(--size-1);
-  width: calc(100% - var(--size-1) * 2);
-  border-radius: var(--size-3);
-  /* background: var(--noise-1) */
-  /* box-shadow: var(--shadow-1); */
+  margin:var(--nav-bar-block-margin) var(--nav-bar-inline-margin);
+  width: calc(100% - var(--nav-bar-inline-margin) * 2);
+  border-radius: var(--nav-bar-border-radius);
 }
 
 .navbar::after {
@@ -23,9 +20,10 @@
 }
 
 .navbar ul {
+  padding: var(--nav-bar-block-padding) var(--nav-bar-inline-padding);
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(8, 5rem);
+  grid-template-columns: repeat(8, var(--nav-bar-item-size));
   justify-content: space-between;
   align-items: center;
 }
@@ -52,7 +50,7 @@
   height: 100%;
   width: 100%;
   color: var(--nav-bar-color);
-  font-size: var(--size-3);
+  font-size: var(--nav-bar-font-size);
 }
 
 .navItem span {

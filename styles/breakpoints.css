@@ -1,0 +1,84 @@
+/* 
+ I have a feeling this is not the best way to do this
+ but I dont want to install postcss for custom queries 
+
+ Do not reorder these unless there is a bug! The cascade matters
+ */
+
+/* "--lg-n-above" */
+@media (width >= 1024px) {
+  :root {
+    --nav-bar-inline-margin: var(--size-fluid-2);
+    --nav-bar-block-margin: var(--size-fluid-1);
+    --nav-bar-block-padding: var(--size-2);
+    --nav-bar-inline-padding: var(--size-fluid-3);
+    --nav-bar-item-size: var(--size-fluid-4);
+    --nav-bar-font-size: var(--font-size-2);
+    --nav-bar-border-radius: var(--size-3);
+  }
+}
+
+/* "--lg-n-below" */
+@media (width < 1024px) {
+  :root {
+    --nav-bar-inline-margin: var(--size-fluid-2);
+    --nav-bar-block-margin: var(--size-fluid-1);
+    --nav-bar-block-padding: var(--size-2);
+    --nav-bar-inline-padding: var(--size-fluid-3);
+    --nav-bar-item-size: var(--size-fluid-4);
+    --nav-bar-font-size: var(--font-size-2);
+    --nav-bar-border-radius: var(--size-3);
+  }
+}
+
+/* "--lg-only" */
+@media (768px <= width < 1024px) {
+  :root {
+  }
+}
+
+/* "--md-n-above" */
+@media (width >= 768px) {
+  :root {
+  }
+}
+
+/* "--md-only" */
+@media (480px <= width < 768px) {
+  :root {
+  }
+}
+
+/* "--md-n-below" */
+@media (width < 768px) {
+  :root {
+    --nav-bar-inline-margin: var(--size-fluid-1);
+    --nav-bar-inline-padding: var(--size-fluid-1);
+    --nav-bar-font-size: var(--font-size-fluid-1);
+    --nav-bar-font-size: var(--font-size-1);
+  }
+}
+
+/* "--sm-only" */
+@media (360px <= width < 480px) {
+  :root {
+  }
+}
+
+/* "--sm-n-above" */
+@media (width >= 480px) {
+  :root {
+  }
+}
+
+/* "--sm-n-below" */
+@media (width < 480px) {
+  :root {
+    --nav-bar-inline-margin: var(--size-00);
+    --nav-bar-block-margin: var(--size-00);
+    --nav-bar-block-padding: var(--size-2);
+    --nav-bar-inline-padding: var(--size-00);
+    --nav-bar-font-size: var(--font-size-0);
+    --nav-bar-border-radius: var(--size-00);
+  }
+}
