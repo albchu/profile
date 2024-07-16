@@ -1,5 +1,25 @@
 .navbar {
   padding: 1rem;
+  position: relative;
+  z-index: var(--layer-1);
+  overflow: hidden;
+  margin: var(--size-1);
+  width: calc(100% - var(--size-1) * 2);
+  border-radius: var(--size-3);
+  /* background: var(--noise-1) */
+  /* box-shadow: var(--shadow-1); */
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--nav-bar-background);
+  background-size: cover;
+  background-blend-mode: overlay;
+  z-index: -1;
+  filter: blur(1rem);
+  opacity: 0.5;
 }
 
 .navbar ul {
@@ -7,11 +27,20 @@
   display: grid;
   grid-template-columns: repeat(8, 5rem);
   justify-content: space-between;
+  align-items: center;
 }
 
 .navItem svg {
-  fill: var(--inverse-text-3);
+  fill: var(--nav-bar-icon-color);
+  transform: translateY(12px) scale(0.9);
+  transition: transform 0.4s;
 }
+
+.selected svg,
+.navItem:hover svg {
+  transform: translateY(0) scale(1);
+}
+
 .navItem a {
   text-decoration: none;
   display: flex;
@@ -20,17 +49,18 @@
   gap: 0.1rem;
   cursor: pointer;
   border-radius: var(--size-3);
-  height:100%;
+  height: 100%;
   width: 100%;
-  color: var(--inverse-text-2);
+  color: var(--nav-bar-color);
   font-size: var(--size-3);
 }
 
 .navItem span {
   transform: scale(0);
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
+.selected span,
 .navItem:hover span {
   transform: scale(1);
 }

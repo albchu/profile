@@ -7,7 +7,6 @@ import {
   ReadCvLogo,
   Student,
 } from "@phosphor-icons/react/dist/ssr";
-import Link from "next/link";
 import React from "react";
 import ToggleSwitch from "../toggle-switch/toggle-switch";
 import styles from "./nav-bar.module.css";
