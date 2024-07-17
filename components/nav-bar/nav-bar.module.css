@@ -1,5 +1,9 @@
 .navbar {
-  position: relative;
+  position: absolute;
+  bottom: var(--nav-bar-position-bottom);
+  left: 0;
+  right: 0;
+  top: var(--nav-bar-position-top);
   z-index: var(--layer-1);
   overflow: hidden;
   margin:var(--nav-bar-block-margin) var(--nav-bar-inline-margin);

@@ -35,13 +35,12 @@ main:has(.banner) {
 }
 
 .banner {
-  /* background-image: var(--gradient-26); */
-  padding: var(--size-fluid-5);
-  border-radius: var(--radius-3);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: var(--size-4);
+  margin-top: var(--hero-banner-margin-top);
 }
 
 .bannerContent {
@@ -71,7 +70,7 @@ main:has(.banner) {
 
 .heroTitle {
   animation: fade-in 0.8s ease-in-out forwards;
-  font-size: var(--font-size-5);
+  font-size: var(--hero-title-font-size);
   font-weight: var(--font-weight-4);
   color: var(--text-1);
   white-space: nowrap;
@@ -79,7 +78,7 @@ main:has(.banner) {
 }
 
 .heroName {
-  font-size: var(--font-size-8);
+  font-size: var(--hero-name-font-size);
   font-weight: var(--font-weight-7);
   line-height: 0.9em;
   color: var(--brand);
@@ -95,25 +94,5 @@ main:has(.banner) {
   .bannerContent {
     text-align: center;
     animation: slide-in-down 0.4s;
-  }
-}
-
-@media (max-width: 560px) {
-  .heroTitle {
-    font-size: var(--font-size-5);
-  }
-
-  .heroName {
-    font-size: var(--font-size-6);
-  }
-}
-
-@media (max-width: 380px) {
-  .heroTitle {
-    font-size: var(--font-size-4);
-  }
-
-  .heroName {
-    font-size: var(--font-size-5);
   }
 }
