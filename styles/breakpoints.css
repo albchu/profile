@@ -82,10 +82,9 @@
 /* "--sm-n-below" */
 @media (width < 480px) {
   :root {
-    --nav-bar-inline-margin: var(--size-00);
-    --nav-bar-block-margin: var(--size-00);
-    --nav-bar-block-padding: var(--size-2);
-    --nav-bar-inline-padding: var(--size-00);
+    --nav-bar-inline-margin:unset;
+    --nav-bar-block-margin:unset;
+    --nav-bar-inline-padding: unset;
     --nav-bar-font-size: var(--font-size-0);
     --nav-bar-border-radius: var(--size-00);
     --hero-name-font-size: var(--font-size-5);

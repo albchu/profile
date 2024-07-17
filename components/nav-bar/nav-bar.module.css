@@ -1,14 +1,18 @@
 .navbar {
-  position: absolute;
+  position: fixed;
   bottom: var(--nav-bar-position-bottom);
   left: 0;
   right: 0;
   top: var(--nav-bar-position-top);
   z-index: var(--layer-1);
   overflow: hidden;
-  margin:var(--nav-bar-block-margin) var(--nav-bar-inline-margin);
+  margin: var(--nav-bar-block-margin) var(--nav-bar-inline-margin);
   width: calc(100% - var(--nav-bar-inline-margin) * 2);
   border-radius: var(--nav-bar-border-radius);
+  padding-top: var(--nav-bar-block-padding);
+  padding-right: var(--nav-bar-inline-padding);
+  padding-bottom: var(--nav-bar-block-padding);
+  padding-left: var(--nav-bar-inline-padding);
 }
 
 .navbar::after {
@@ -24,12 +28,12 @@
 }
 
 .navbar ul {
-  padding: var(--nav-bar-block-padding) var(--nav-bar-inline-padding);
   list-style: none;
   display: grid;
   grid-template-columns: repeat(8, var(--nav-bar-item-size));
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
 }
 
 .navItem svg {
