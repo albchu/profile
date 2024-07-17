@@ -9,10 +9,11 @@ export const HeroImage = () => {
         <Image
           src="/real-face.jpg" // Path to your image in the public directory
           alt="mee"
-          layout="fill" // Use fill layout to make it easier to position
-          objectFit="cover" // Cover the entire container
-          quality={75} // Optional: Adjust the quality of the optimized image
-          priority // Optional: Load this image with high priority
+          className={styles.heroImage}
+          width={350}
+          height={350}
+          quality={75}
+          priority
         />
       </div>
     </div>
